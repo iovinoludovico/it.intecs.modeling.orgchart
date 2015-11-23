@@ -23,6 +23,7 @@
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Orgchart.ecore#//Member/boss"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Orgchart.ecore#//Member/role"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Orgchart.ecore#//Member/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Orgchart.ecore#//Member/phone"/>
     </genClasses>
     <genClasses ecoreClass="Orgchart.ecore#//orgchartModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Orgchart.ecore#//orgchartModel/president"/>

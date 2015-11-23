@@ -14,6 +14,7 @@
         eOpposite="#//Member/subemployees"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="role" eType="#//Role"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Role">
     <eLiterals name="Developer"/>

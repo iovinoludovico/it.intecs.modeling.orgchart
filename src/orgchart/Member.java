@@ -17,6 +17,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link orgchart.Member#getBoss <em>Boss</em>}</li>
  *   <li>{@link orgchart.Member#getRole <em>Role</em>}</li>
  *   <li>{@link orgchart.Member#getAddress <em>Address</em>}</li>
+ *   <li>{@link orgchart.Member#getPhone <em>Phone</em>}</li>
  * </ul>
  *
  * @see orgchart.OrgchartPackage#getMember()
@@ -96,6 +97,32 @@ public interface Member extends NamedElement {
 	 * @generated
 	 */
 	void setAddress(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Phone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Phone</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Phone</em>' attribute.
+	 * @see #setPhone(String)
+	 * @see orgchart.OrgchartPackage#getMember_Phone()
+	 * @model
+	 * @generated
+	 */
+	String getPhone();
+
+	/**
+	 * Sets the value of the '{@link orgchart.Member#getPhone <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Phone</em>' attribute.
+	 * @see #getPhone()
+	 * @generated
+	 */
+	void setPhone(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Boss</b></em>' container reference.

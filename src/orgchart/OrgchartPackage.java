@@ -150,13 +150,22 @@ public interface OrgchartPackage extends EPackage {
 	int MEMBER__ADDRESS = NAMED_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Phone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MEMBER__PHONE = NAMED_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Member</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MEMBER_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 4;
+	int MEMBER_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Member</em>' class.
@@ -221,6 +230,15 @@ public interface OrgchartPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRESIDENT__ADDRESS = MEMBER__ADDRESS;
+
+	/**
+	 * The feature id for the '<em><b>Phone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRESIDENT__PHONE = MEMBER__PHONE;
 
 	/**
 	 * The feature id for the '<em><b>Company Name</b></em>' attribute.
@@ -383,6 +401,17 @@ public interface OrgchartPackage extends EPackage {
 	EAttribute getMember_Address();
 
 	/**
+	 * Returns the meta object for the attribute '{@link orgchart.Member#getPhone <em>Phone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Phone</em>'.
+	 * @see orgchart.Member#getPhone()
+	 * @see #getMember()
+	 * @generated
+	 */
+	EAttribute getMember_Phone();
+
+	/**
 	 * Returns the meta object for class '{@link orgchart.orgchartModel <em>orgchart Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -516,6 +545,14 @@ public interface OrgchartPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute MEMBER__ADDRESS = eINSTANCE.getMember_Address();
+
+		/**
+		 * The meta object literal for the '<em><b>Phone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MEMBER__PHONE = eINSTANCE.getMember_Phone();
 
 		/**
 		 * The meta object literal for the '{@link orgchart.impl.orgchartModelImpl <em>orgchart Model</em>}' class.

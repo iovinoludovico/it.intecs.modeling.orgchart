@@ -34,6 +34,7 @@ import orgchart.Role;
  *   <li>{@link orgchart.impl.MemberImpl#getBoss <em>Boss</em>}</li>
  *   <li>{@link orgchart.impl.MemberImpl#getRole <em>Role</em>}</li>
  *   <li>{@link orgchart.impl.MemberImpl#getAddress <em>Address</em>}</li>
+ *   <li>{@link orgchart.impl.MemberImpl#getPhone <em>Phone</em>}</li>
  * </ul>
  *
  * @generated
@@ -88,6 +89,26 @@ public class MemberImpl extends NamedElementImpl implements Member {
 	 * @ordered
 	 */
 	protected String address = ADDRESS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPhone() <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhone()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PHONE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPhone() <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhone()
+	 * @generated
+	 * @ordered
+	 */
+	protected String phone = PHONE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,6 +181,27 @@ public class MemberImpl extends NamedElementImpl implements Member {
 		address = newAddress;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, OrgchartPackage.MEMBER__ADDRESS, oldAddress, address));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getPhone() {
+		return phone;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPhone(String newPhone) {
+		String oldPhone = phone;
+		phone = newPhone;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, OrgchartPackage.MEMBER__PHONE, oldPhone, phone));
 	}
 
 	/**
@@ -268,6 +310,8 @@ public class MemberImpl extends NamedElementImpl implements Member {
 				return getRole();
 			case OrgchartPackage.MEMBER__ADDRESS:
 				return getAddress();
+			case OrgchartPackage.MEMBER__PHONE:
+				return getPhone();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -294,6 +338,9 @@ public class MemberImpl extends NamedElementImpl implements Member {
 			case OrgchartPackage.MEMBER__ADDRESS:
 				setAddress((String)newValue);
 				return;
+			case OrgchartPackage.MEMBER__PHONE:
+				setPhone((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -318,6 +365,9 @@ public class MemberImpl extends NamedElementImpl implements Member {
 			case OrgchartPackage.MEMBER__ADDRESS:
 				setAddress(ADDRESS_EDEFAULT);
 				return;
+			case OrgchartPackage.MEMBER__PHONE:
+				setPhone(PHONE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -338,6 +388,8 @@ public class MemberImpl extends NamedElementImpl implements Member {
 				return role != ROLE_EDEFAULT;
 			case OrgchartPackage.MEMBER__ADDRESS:
 				return ADDRESS_EDEFAULT == null ? address != null : !ADDRESS_EDEFAULT.equals(address);
+			case OrgchartPackage.MEMBER__PHONE:
+				return PHONE_EDEFAULT == null ? phone != null : !PHONE_EDEFAULT.equals(phone);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -356,6 +408,8 @@ public class MemberImpl extends NamedElementImpl implements Member {
 		result.append(role);
 		result.append(", address: ");
 		result.append(address);
+		result.append(", phone: ");
+		result.append(phone);
 		result.append(')');
 		return result.toString();
 	}

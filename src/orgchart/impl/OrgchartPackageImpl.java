@@ -198,6 +198,15 @@ public class OrgchartPackageImpl extends EPackageImpl implements OrgchartPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getMember_Phone() {
+		return (EAttribute)memberEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getorgchartModel() {
 		return orgchartModelEClass;
 	}
@@ -268,6 +277,7 @@ public class OrgchartPackageImpl extends EPackageImpl implements OrgchartPackage
 		createEReference(memberEClass, MEMBER__BOSS);
 		createEAttribute(memberEClass, MEMBER__ROLE);
 		createEAttribute(memberEClass, MEMBER__ADDRESS);
+		createEAttribute(memberEClass, MEMBER__PHONE);
 
 		orgchartModelEClass = createEClass(ORGCHART_MODEL);
 		createEReference(orgchartModelEClass, ORGCHART_MODEL__PRESIDENT);
@@ -319,6 +329,7 @@ public class OrgchartPackageImpl extends EPackageImpl implements OrgchartPackage
 		initEReference(getMember_Boss(), this.getMember(), this.getMember_Subemployees(), "boss", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMember_Role(), this.getRole(), "role", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMember_Address(), ecorePackage.getEString(), "address", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMember_Phone(), ecorePackage.getEString(), "phone", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orgchartModelEClass, orgchartModel.class, "orgchartModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getorgchartModel_President(), this.getPresident(), null, "president", null, 1, 1, orgchartModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
