@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<orgchart:orgchartModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:orgchart="http://www.disim.univaq.it/orgchart">
+  <president
+      name="Mario Rossi"
+      role="Director"
+      address="Via vetoio"
+      companyName="IBM">
+    <subemployees
+        name="Paolo bianchi"
+        address="via roma"/>
+    <subemployees
+        name="Gianna Verdi"/>
+  </president>
+</orgchart:orgchartModel>

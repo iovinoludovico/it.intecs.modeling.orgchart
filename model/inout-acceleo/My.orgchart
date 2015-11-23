@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orgchart:President
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:orgchart="http://www.disim.univaq.it/orgchart"
+    name="Mario rossi"
+    address="Via vetoio snc L'Aquila"
+    companyName="Apple">
+  <subemployees
+      name="Gino bianchi"
+      address="via Roma 12 Roma">
+    <subemployees
+        name="Giovanna D Arco"
+        role="Director"
+        address="via Lago di Como"/>
+    <subemployees
+        name="Ludovico"
+        address="dddd"/>
+  </subemployees>
+</orgchart:President>

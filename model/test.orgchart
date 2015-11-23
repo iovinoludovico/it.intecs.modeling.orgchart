@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orgchart:orgchartModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:orgchart="http://www.disim.univaq.it/orgchart">
+  <president
+      name="John Black"
+      companyName="IBM">
+    <subemployees
+        name="Jack Stones"/>
+  </president>
+</orgchart:orgchartModel>

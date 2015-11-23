@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<orgchart:President
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:orgchart="http://www.disim.univaq.it/orgchart"
+    name="John Smith"
+    address="New York street 23"
+    companyName="IBM">
+  <subemployees
+      name="Fred Flinstones"
+      role="Secretary"
+      address="New York street 233"/>
+  <subemployees
+      name="Michael Night"
+      role="Director">
+    <subemployees
+        name="James Bond"
+        role="Secretary"/>
+    <subemployees
+        name="Nick Kamen">
+      <subemployees
+          name="Greg Nicholson"
+          role="SeniorDeveloper"/>
+    </subemployees>
+    <subemployees
+        name="Kim Stone"/>
+  </subemployees>
+</orgchart:President>

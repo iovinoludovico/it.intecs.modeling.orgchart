@@ -1,0 +1,31 @@
+<html> 
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages: ['orgchart' ]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+        data.addRows( [
+        [{v:'Mario rossi', f:'Mario rossi<div style="color:red; font-style:italic">President</div>'}, '', 'The President'],
+	      [{v:'Gino bianchi', f:'Gino bianchi<div style="color:red; font-style:italic">Developer</div>'}, 'Mario rossi', 
+	      'via Roma 12 Roma'],
+	      		 [{v:'Giovanna D Arco', f:'Giovanna D Arco<div style="color:red; font-style:italic">Director</div>'}, 'Gino bianchi',
+	      		 'via Lago di Como']     
+	      		
+	      ,		 [{v:'Ludovico', f:'Ludovico<div style="color:red; font-style:italic">Developer</div>'}, 'Gino bianchi',
+	       'dddd']     
+	      
+	      
+		]
+		);
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+        chart.draw(data, {allowHtml:true});
+      }
+    </script>
+  </head>
+  <body><center><h2>Apple Orgchart</h2></center><div id='chart_div'></div></body>
+</html>
